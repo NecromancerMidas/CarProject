@@ -28,11 +28,12 @@ namespace CarProject
         {
             var tempList = new Car[Cars.Count];
             Cars.CopyTo(tempList);
+            Cars.RemoveAll(car => car.RegistrationNumber.Equals(registrationNumber)); //even better, nice.
             
-            foreach (var car in tempList.Where(car => car.RegistrationNumber == registrationNumber)) //not really required but very neat.
+          /*  foreach (var car in tempList.Where(car => car.RegistrationNumber == registrationNumber)) //not really required but very neat.
             {
                 Cars.Remove(car);
-            }
+            }*/
         }
 
         public List<Car> ListOlderCars(int year)

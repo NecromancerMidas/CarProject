@@ -15,7 +15,7 @@ namespace CarProject
             carDealership1.AddCar(car3);
             var carList = carDealership1.ListMoreKm(22000);
             var carList2 = carDealership1.ListOlderCars(2020);
-            carDealership1.RemoveCar("lol123");
+            carDealership1.RemoveCar("Lol123");
 
 
 
